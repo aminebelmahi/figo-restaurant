@@ -1,0 +1,157 @@
+/*** Global Styling ***/
+
+:root {
+  --very-dark-green: #2c3722;
+  --dark-green-leaf: #639d2b;
+  --light-green-leaf: #8cb560;
+  --orange: #febd00;
+  --egg-shell: #f8fbf5;
+  --light-grey: #8d8d8d;
+}
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:ital,wght@0,300;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* font-family: 'Cookie', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.section-1 {
+  max-width: 2048px;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, var(--egg-shell), #ffffff);
+}
+
+.hero-container {
+  width: 75%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* Components */
+
+.btn {
+  width: 165px;
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid beige;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to left,
+    var(--dark-green-leaf),
+    var(--light-green-leaf)
+  );
+  color: var(--egg-shell);
+  text-align: center;
+  box-shadow: 0 5px 10px -10px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Navbar */
+
+.nav-bar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: inline-flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: var(--light-grey);
+}
+
+.nav-links a:hover {
+  color: var(--very-dark-green);
+  font-weight: 500;
+}
+
+/* Hero Section */
+
+.showcase {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase .text,
+.showcase .illustration {
+  flex: 1;
+}
+
+.showcase .text {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.showcase .text > * {
+  margin-bottom: 30px;
+}
+
+.showcase .text h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.showcase .text p {
+  font-weight: 400;
+  width: 80%;
+}
+
+.showcase form {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase form input {
+  width: 351px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px -10px;
+  outline: none;
+  border: none;
+}
+
+.showcase img {
+  width: 100%;
+  margin-right: -500px;
+}
