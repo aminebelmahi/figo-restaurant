@@ -30,6 +30,11 @@ body {
   margin: 0 auto;
 }
 
+a:hover {
+  color: var(--very-dark-green);
+  font-weight: 600;
+}
+
 h1 {
   font-size: 52px;
   letter-spacing: 2px;
@@ -75,11 +80,9 @@ img {
   padding: 15px 20px;
   border: 1px solid beige;
   border-radius: 5px;
-  background-image: linear-gradient(
-    to left,
-    var(--dark-green-leaf),
-    var(--light-green-leaf)
-  );
+  background-image: linear-gradient(to left,
+      var(--dark-green-leaf),
+      var(--light-green-leaf));
   color: var(--egg-shell);
   text-align: center;
   box-shadow: 0 5px 10px -10px;
@@ -139,12 +142,12 @@ li a {
   flex-wrap: wrap;
 }
 
-.showcase > :first-child {
+.showcase> :first-child {
   margin-right: 50px;
   flex: 1;
 }
 
-.showcase > :last-child {
+.showcase> :last-child {
   margin-left: 50px;
   flex: 1;
   margin-right: -150px;
@@ -162,8 +165,13 @@ li a {
   flex-direction: row-reverse;
 }
 
-.welcome .text,
-.welcome .illustration {
+.welcome> :first-child {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.welcome> :last-child {
+  margin-right: 10px;
   flex: 1;
 }
 
@@ -189,7 +197,7 @@ li a {
   align-items: center;
 }
 
-.cards > * {
+.cards>* {
   text-align: center;
 }
 
@@ -215,4 +223,25 @@ li a {
 .card h3,
 .card p {
   margin-bottom: 25px;
+}
+
+/* Section 4: Menu */
+
+.menu {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.menu .text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
