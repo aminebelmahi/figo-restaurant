@@ -8,5 +8,6 @@ tabs.forEach(tab => {
             tabContent.classList.remove('active')
         })
         target.classList.add('active');
+
     })
 })

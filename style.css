@@ -215,12 +215,12 @@ li a {
   flex-direction: column;
   background-color: var(--egg-shell);
   padding: 0 22px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .card:hover {
   background-color: #ffffff;
-  border-bottom: 2px solid var(--dark-green-leaf);
+  border-bottom: 3px solid var(--dark-green-leaf);
   box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
 }
 
@@ -253,7 +253,6 @@ li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
 }
 
 /* Tabs */
@@ -268,12 +267,17 @@ li a {
 }
 
 .tabs li {
-  border: 1px solid red;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  border-left: 3px solid #f4f4f4;
+  padding-left: 20px;
+}
+
+.tabs li:hover {
+  border-left: solid 3px var(--orange);
 }
 
 /* Tab Content */
@@ -292,13 +296,34 @@ li a {
 }
 
 .menu-items {
-  margin-top: 10px;
+  box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
+}
+
+.menu-items .menu-img {
+  background-color: #f2ffdb25;
+}
+
+.menu-items:hover {
+  background-color: #ffffff;
+  border-bottom: 3px solid var(--dark-green-leaf);
+  border-radius: 5px;
 }
 
 .menu-items > * {
   display: block;
   margin-bottom: 15px;
   text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.price {
+  font-size: 22px;
+  margin-bottom: 2px;
+  color: var(--dark-green-leaf);
+  font-weight: 600;
 }
 
 /**** Breakfast ****/
