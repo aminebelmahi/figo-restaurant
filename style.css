@@ -80,9 +80,11 @@ img {
   padding: 15px 20px;
   border: 1px solid beige;
   border-radius: 5px;
-  background-image: linear-gradient(to left,
-      var(--dark-green-leaf),
-      var(--light-green-leaf));
+  background-image: linear-gradient(
+    to left,
+    var(--dark-green-leaf),
+    var(--light-green-leaf)
+  );
   color: var(--egg-shell);
   text-align: center;
   box-shadow: 0 5px 10px -10px;
@@ -99,7 +101,7 @@ input {
   border: none;
 }
 
-/*** Section 1: Hero ***/
+/***** Section 1: Hero *****/
 
 .section-1 {
   background-image: linear-gradient(to bottom, var(--egg-shell), #ffffff);
@@ -142,18 +144,18 @@ li a {
   flex-wrap: wrap;
 }
 
-.showcase> :first-child {
+.showcase > :first-child {
   margin-right: 50px;
   flex: 1;
 }
 
-.showcase> :last-child {
+.showcase > :last-child {
   margin-left: 50px;
   flex: 1;
   margin-right: -150px;
 }
 
-/*** Section 2: Welcome ***/
+/***** Section 2: Welcome *****/
 
 .welcome {
   width: 75%;
@@ -165,17 +167,17 @@ li a {
   flex-direction: row-reverse;
 }
 
-.welcome> :first-child {
+.welcome > :first-child {
   margin-left: 10px;
   flex: 1;
 }
 
-.welcome> :last-child {
+.welcome > :last-child {
   margin-right: 10px;
   flex: 1;
 }
 
-/*** Section 3: Reasons ***/
+/***** Section 3: Reasons *****/
 
 .reasons {
   width: 75%;
@@ -192,24 +194,27 @@ li a {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 35px;
+  justify-content: center;
 }
 
-.cards>* {
+.cards > * {
   text-align: center;
 }
 
 .card {
   width: 100%;
+  height: 347px;
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: 370px;
-  height: 347px;
   background-color: var(--egg-shell);
-  padding: 0 20px;
+  padding: 0 22px;
   border-radius: 15px;
 }
 
@@ -225,7 +230,7 @@ li a {
   margin-bottom: 25px;
 }
 
-/* Section 4: Menu */
+/***** Section 4: Menu *****/
 
 .menu {
   width: 75%;
@@ -233,10 +238,45 @@ li a {
   height: 100%;
 }
 
+/* Text */
+
 .menu .text {
   text-align: center;
   margin-bottom: 30px;
 }
+
+/** Menu Content **/
+
+.menu-content {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+/* Tabs */
+
+.tabs {
+  flex: 0.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+
+.tabs li {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tab Content */
 
 [data-tab-content] {
   display: none;
@@ -244,4 +284,29 @@ li a {
 
 .active[data-tab-content] {
   display: block;
+}
+
+.tab-content {
+  flex: 2;
+  height: 100%;
+}
+
+.menu-items {
+  margin-top: 10px;
+}
+
+.menu-items > * {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/**** Breakfast ****/
+
+.active#breakfast {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
 }
