@@ -13,12 +13,12 @@ tabs.forEach(tab => {
     // Add 'active' class to 'menu-content'
     target.classList.add('active');
 
-    //loop through 'li' items and remove 'active' class
+    // loop through 'li' items and remove 'active' class
     tabs.forEach(tab => {
       tab.classList.remove('active');
     })
 
-    //add 'active' class to clicked 'li' item
+    // Add 'active' class to clicked 'li' item
     e.target.classList.add("active");
 
   })
