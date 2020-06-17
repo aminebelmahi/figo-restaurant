@@ -1,3 +1,4 @@
+///// Adding functionalities to the Tab-Menu Section /////
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabsContents = document.querySelectorAll('[data-tab-content]');
 
