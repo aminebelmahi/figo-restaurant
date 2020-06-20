@@ -39,11 +39,13 @@ h1 {
   font-size: 52px;
   letter-spacing: 2px;
   margin-bottom: 25px;
+  line-height: 1.3;
 }
 
 h2 {
   font-size: 32px;
   margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 h4 {
@@ -75,7 +77,8 @@ img {
 .welcome,
 .reasons,
 .menu,
-.history {
+.history,
+.testimonials {
   width: 75%;
   margin: 0 auto;
   height: 100%;
@@ -107,6 +110,7 @@ input {
   outline: none;
   padding: 15px 20px;
   border: none;
+  margin-right: 20px;
 }
 
 /***** Section 1: Hero *****/
@@ -264,6 +268,7 @@ li a {
   align-items: center;
   border-left: 3px solid #f4f4f4;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .tabs li:hover {
@@ -296,6 +301,10 @@ li a {
 }
 
 .menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
 }
 
@@ -325,7 +334,6 @@ h5 {
 
 .price {
   font-size: 22px;
-  margin-bottom: 0;
   color: var(--dark-green-leaf);
   font-weight: 600;
 }
@@ -350,3 +358,83 @@ h5 {
 }
 
 /*** Testimonials ***/
+
+.testimonials .text {
+  text-align: center;
+}
+
+.testimony-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimony-container .t-card {
+  margin-top: 50px;
+  width: 480px;
+  height: 400px;
+  box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
+  position: relative;
+  background-color: var(--egg-shell);
+}
+
+.t-card .leaves {
+  position: absolute;
+  width: 120px;
+  top: -15%;
+}
+
+.t-card .avatar {
+  display: block;
+  width: 125px;
+  height: 155px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid var(--orange);
+  margin: 15px auto 20px auto;
+}
+
+.t-card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.t-card-body h5 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  color: var(--orange);
+  margin: 15px 10px;
+}
+
+.t-card-body .info {
+  padding: 0 20px 0px 20px;
+  margin-bottom: 15px;
+}
+
+.arrows {
+  width: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: var(--orange);
+  cursor: pointer;
+  border-bottom: 2px solid var(--orange);
+}
+
+.t-card button {
+  border: none;
+  background-color: transparent;
+}
