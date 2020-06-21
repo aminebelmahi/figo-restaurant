@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Links -->
-  <link rel="stylesheet" href="./style.css" />
+  <!-- Stylesheet Links -->
+  <!-- Desktop -->
+  <link rel='stylesheet' media="screen and (min-device-width: 480px)" href='./styles/desktop.css' />
+  <!-- Mobile -->
+  <link rel='stylesheet' media="screen and (max-device-width: 480px)" href='./styles/mobile.css' />
+  <!-- External CSS libraries -->
   <link
     href="https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,500&display=swap"
     rel="stylesheet" />
@@ -15,8 +19,8 @@
 
 <body>
   <!---- Hero ---->
-  <div class="section-1 mb">
-    <div class="hero-container">
+  <div id="section-container">
+    <section class="hero-container mb">
       <!-- Navbar -->
       <nav>
         <!-- Logo -->
@@ -32,9 +36,12 @@
           <li>
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
           </li>
+          <div class="burger-menu">
+            <i class="fa fa-bars"></i>
+          </div>
         </ul>
       </nav>
-      <!-- Hero Section -->
+      <!-- Showcase -->
       <div class="showcase">
         <!-- Text -->
         <div class="text">
@@ -58,403 +65,391 @@
           <img src="./images/showcase.png" alt="illustration" />
         </div>
       </div>
-    </div>
+    </section>
   </div>
+
 
   <!-- Welcome -->
-  <div class="section-2 mb">
-    <div class="welcome">
-      <!-- Text -->
-      <div class="text">
-        <h4>Welcome</h4>
-        <h2>Welcome to Figo Restaurant</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-          amet perferendis ut nulla facilis ducimus placeat sapiente incidunt
-          aspernatur quae repellendus illum asperiores tempora vero dolor iste
-          repudiandae dolores dolore. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Tempora rerum consequuntur culpa quibusdam eveniet
-          quis.
+  <section class="welcome mb">
+    <!-- Text -->
+    <div class="text">
+      <h4>Welcome</h4>
+      <h2>Welcome to Figo Restaurant</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
+        amet perferendis ut nulla facilis ducimus placeat sapiente incidunt
+        aspernatur quae repellendus illum asperiores tempora vero dolor iste
+        repudiandae dolores dolore. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Tempora rerum consequuntur culpa quibusdam eveniet
+        quis.
 
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cumque earum sequi vitae voluptates odit sed
-          animi fugiat. Culpa reprehenderit laudantium, exercitationem error perspiciatis officiis.
-        </p>
-        <button class="btn">Explore Our Story</button>
-      </div>
-      <!-- Illustration -->
-      <div class="illustration">
-        <img src="./images/chef.jpg" alt="" />
-      </div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cumque earum sequi vitae voluptates odit sed
+        animi fugiat. Culpa reprehenderit laudantium, exercitationem error perspiciatis officiis.
+      </p>
+      <button class="btn">Explore Our Story</button>
     </div>
-  </div>
+    <!-- Illustration -->
+    <div class="illustration">
+      <img src="./images/chef.jpg" alt="" />
+    </div>
+  </section>
 
   <!-- Reason -->
-  <div class="section-3 mb">
-    <div class="reasons">
-      <!-- Text -->
-      <div class="text">
-        <h4>Reasons</h4>
-        <h2>Why Choose Us?</h2>
+  <section class="reasons mb">
+    <!-- Text -->
+    <div class="text">
+      <h4>Reasons</h4>
+      <h2>Why Choose Us?</h2>
+    </div>
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="icon-container">
+          <img src="./images/menu-icon.png" alt="menu" class="icon" />
+        </div>
+        <h3>Various Menu</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          ex odit dicta, aperiam magnam necessitatibus!
+        </p>
       </div>
-      <!-- Cards -->
-      <div class="cards">
-        <div class="card">
-          <div class="icon-container">
-            <img src="./images/menu-icon.png" alt="menu" class="icon" />
-          </div>
-          <h3>Various Menu</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            ex odit dicta, aperiam magnam necessitatibus!
-          </p>
-        </div>
 
-        <div class="card">
-          <div class="icon-container">
-            <img src="./images/bike-icon.png" alt="bike" class="icon" />
-          </div>
-          <h3>Pocket Friendly Delivery</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            ex odit dicta, aperiam magnam necessitatibus!
-          </p>
+      <div class="card">
+        <div class="icon-container">
+          <img src="./images/bike-icon.png" alt="bike" class="icon" />
         </div>
+        <h3>Pocket Friendly Delivery</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          ex odit dicta, aperiam magnam necessitatibus!
+        </p>
+      </div>
 
-        <div class="card">
-          <div class="icon-container">
-            <img src="./images/offer-icon.png" alt="offer" class="icon" />
-          </div>
-          <h3>Best Offers</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            ex odit dicta, aperiam magnam necessitatibus!
-          </p>
+      <div class="card">
+        <div class="icon-container">
+          <img src="./images/offer-icon.png" alt="offer" class="icon" />
         </div>
+        <h3>Best Offers</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          ex odit dicta, aperiam magnam necessitatibus!
+        </p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Menu -->
-  <div class="section-4 mb">
-    <div class="menu">
-      <!-- Text -->
-      <div class="text">
-        <h4>Browse</h4>
-        <h2>Explore Our Menu</h2>
-      </div>
-      <!-- Menu Content -->
-      <div class="menu-content">
-        <!-- Tabs -->
-        <ul class="tabs">
-          <li data-tab-target="#breakfast" class="active">Breakfast</li>
-          <li data-tab-target="#lunch">Lunch</li>
-          <li data-tab-target="#dinner">Dinner</li>
-          <li data-tab-target="#desert">Desert</li>
-        </ul>
-        <!-- Tabs Content -->
-        <div class="tab-content">
-          <!-- Breakfast -->
-          <div id="breakfast" data-tab-content class="active">
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
-              </div>
-              <h5 id="dish">Breakfast</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price" id="price">99£</span>
+  <section class="menu mb">
+    <!-- Text -->
+    <div class="text">
+      <h4>Browse</h4>
+      <h2>Explore Our Menu</h2>
+    </div>
+    <!-- Menu Content -->
+    <div class="menu-content">
+      <!-- Tabs -->
+      <ul class="tabs">
+        <li data-tab-target="#breakfast" class="active">Breakfast</li>
+        <li data-tab-target="#lunch">Lunch</li>
+        <li data-tab-target="#dinner">Dinner</li>
+        <li data-tab-target="#desert">Desert</li>
+      </ul>
+      <!-- Tabs Content -->
+      <div class="tab-content">
+        <!-- Breakfast -->
+        <div id="breakfast" data-tab-content class="active">
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-2.png" alt="" />
-              </div>
-              <h5>Breakfast</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">99£</span>
+            <h5 id="dish">Breakfast</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-3.png" alt="" />
-              </div>
-              <h5>Breakfast</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">99£</span>
-            </div>
+            <span class="price" id="price">99£</span>
           </div>
 
-          <!-- Lunch -->
-          <div id="lunch" data-tab-content>
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
-              </div>
-              <h5 id="dish">Lunch</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price" id="price">79£</span>
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-2.png" alt="" />
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-2.png" alt="" />
-              </div>
-              <h5>Lunch</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">79£</span>
+            <h5>Breakfast</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-3.png" alt="" />
-              </div>
-              <h5>Luch</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">79£</span>
-            </div>
-
-
+            <span class="price">99£</span>
           </div>
 
-          <!-- Dinner -->
-          <div id="dinner" data-tab-content>
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
-              </div>
-              <h5 id="dish">Dinner</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price" id="price">59£</span>
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-3.png" alt="" />
             </div>
+            <h5>Breakfast</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price">99£</span>
+          </div>
+        </div>
 
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-2.png" alt="" />
-              </div>
-              <h5>Dinner</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">59£</span>
+        <!-- Lunch -->
+        <div id="lunch" data-tab-content>
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-3.png" alt="" />
-              </div>
-              <h5>Dinner</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">59£</span>
+            <h5 id="dish">Lunch</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <span class="price" id="price">79£</span>
           </div>
 
-          <!-- Dessert -->
-          <div id="desert" data-tab-content>
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
-              </div>
-              <h5 id="dish">Dessert</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price" id="price">69£</span>
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-2.png" alt="" />
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-2.png" alt="" />
-              </div>
-              <h5>Dessert</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">69£</span>
+            <h5>Lunch</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
-
-            <div class="menu-items">
-              <div class="menu-img">
-                <img src="./images/breakfast-menu-3.png" alt="" />
-              </div>
-              <h5>Dessert</h5>
-              <div class="stars">
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <span class="price">69£</span>
-            </div>
+            <span class="price">79£</span>
           </div>
+
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-3.png" alt="" />
+            </div>
+            <h5>Luch</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price">79£</span>
+          </div>
+
 
         </div>
+
+        <!-- Dinner -->
+        <div id="dinner" data-tab-content>
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
+            </div>
+            <h5 id="dish">Dinner</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price" id="price">59£</span>
+          </div>
+
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-2.png" alt="" />
+            </div>
+            <h5>Dinner</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price">59£</span>
+          </div>
+
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-3.png" alt="" />
+            </div>
+            <h5>Dinner</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price">59£</span>
+          </div>
+        </div>
+
+        <!-- Dessert -->
+        <div id="desert" data-tab-content>
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-1.png" alt="" id="menu-img" />
+            </div>
+            <h5 id="dish">Dessert</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price" id="price">69£</span>
+          </div>
+
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-2.png" alt="" />
+            </div>
+            <h5>Dessert</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price">69£</span>
+          </div>
+
+          <div class="menu-items">
+            <div class="menu-img">
+              <img src="./images/breakfast-menu-3.png" alt="" />
+            </div>
+            <h5>Dessert</h5>
+            <div class="stars">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="price">69£</span>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-  </div>
+  </section>
 
   <!-- History -->
-  <div class="section-5 mb">
-    <div class="history">
-      <!-- Text -->
-      <div class="text">
-        <h4>History of Figo</h4>
-        <h2>We Cook Tradition <br> & Family Recipes</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta minima expedita a error? Quo eaque
-          facere doloribus beatae voluptas numquam veritatis, nihil corporis dicta sunt quam velit incidunt, tempore
-          architecto nostrum doloremque illum odit, nam libero. Ipsa velit dignissimos fuga ab veniam sed voluptatem?
-        </p>
-        <button class="btn">Explore Our Story</button>
-      </div>
-      <!-- Illustration -->
-      <div class="illustration">
-        <img src="./images/burger.jpg" alt="burger">
-      </div>
+  <section class="history mb">
+    <!-- Text -->
+    <div class="text">
+      <h4>History of Figo</h4>
+      <h2>We Cook Tradition <br> & Family Recipes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta minima expedita a error? Quo eaque
+        facere doloribus beatae voluptas numquam veritatis, nihil corporis dicta sunt quam velit incidunt, tempore
+        architecto nostrum doloremque illum odit, nam libero. Ipsa velit dignissimos fuga ab veniam sed voluptatem?
+      </p>
+      <button class="btn">Explore Our Story</button>
     </div>
-  </div>
+    <!-- Illustration -->
+    <div class="illustration">
+      <img src="./images/burger.jpg" alt="burger">
+    </div>
+  </section>
 
   <!-- Testimonials -->
-  <div class="section-6 mb">
-    <div class="testimonials">
-      <!-- Text -->
-      <div class="text">
-        <h4>Testimonials</h4>
-        <h2>Food Lover's Say</h2>
-      </div>
-      <!-- Testimony Cards -->
-      <div class="testimony-container testimony-active">
-        <div class="t-card">
-          <img src="./images/leaves.png" alt="leaves" class="leaves">
-          <div class="t-card-body">
-            <img src="" alt="Avatar" class="avatar">
-            <h5 class="name"></h5>
-            <p class="info"></p>
-            <div class="arrows">
-              <button class="prev-btn"><i class="fas fa-angle-left fa-2x"></i></button>
-              <button class="next-btn"><i class="fas fa-angle-right fa-2x"></i></button>
-            </div>
+  <section class="testimonials mb">
+    <!-- Text -->
+    <div class="text">
+      <h4>Testimonials</h4>
+      <h2>Food Lover's Say</h2>
+    </div>
+    <!-- Testimony Cards -->
+    <div class="testimony-container testimony-active">
+      <div class="t-card">
+        <img src="./images/leaves.png" alt="leaves" class="leaves">
+        <div class="t-card-body">
+          <img src="" alt="Avatar" class="avatar">
+          <h5 class="name"></h5>
+          <p class="info"></p>
+          <div class="arrows">
+            <button class="prev-btn"><i class="fas fa-angle-left fa-2x"></i></button>
+            <button class="next-btn"><i class="fas fa-angle-right fa-2x"></i></button>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- News -->
-  <div class="section-7 mb">
-    <div class="news">
-      <!-- Text -->
-      <div class="text">
-        <h4>News</h4>
-        <h2>Latest News</h2>
+  <section class="news mb">
+    <!-- Text -->
+    <div class="text">
+      <h4>News</h4>
+      <h2>Latest News</h2>
+    </div>
+    <!-- News Content -->
+    <div class="news-content">
+      <!-- Card 1 -->
+      <div class="n-card">
+        <div class="img-container">
+          <img src="./images/news-1.jpg" alt="picture">
+        </div>
+        <h5>Spain Appetizer</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
+        <a href="#">Read More</a>
       </div>
-      <!-- News Content -->
-      <div class="news-content">
-        <!-- Card 1 -->
-        <div class="n-card">
-          <div class="img-container">
-            <img src="./images/news-1.jpg" alt="picture">
-          </div>
-          <h5>Spain Appetizer</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
-          <a href="#">Read More</a>
+      <!-- Card 2 -->
+      <div class="n-card">
+        <div class="img-container">
+          <img src="./images/news-2.jpg" alt="picture">
         </div>
-        <!-- Card 2 -->
-        <div class="n-card">
-          <div class="img-container">
-            <img src="./images/news-2.jpg" alt="picture">
-          </div>
-          <h5>Fish and Chips</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
-          <a href="#">Read More</a>
+        <h5>Fish and Chips</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
+        <a href="#">Read More</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="n-card">
+        <div class="img-container">
+          <img src="./images/news-3.jpg" alt="picture">
         </div>
-        <!-- Card 3 -->
-        <div class="n-card">
-          <div class="img-container">
-            <img src="./images/news-3.jpg" alt="picture">
-          </div>
-          <h5>Kabab and Salad</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
-          <a href="#">Read More</a>
-        </div>
+        <h5>Kabab and Salad</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
+        <a href="#">Read More</a>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Subsciption   -->
-  <div class="section-8 mb">
-    <div class="subscription">
-      <h4>Subscription</h4>
-      <h2>Wants to Get Updates?</h2>
-      <form>
-        <input type="text" placeholder="Enter Your Email Address...">
-        <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-      </form>
-    </div>
-  </div>
+  <section class="subscription mb">
+    <h4>Subscription</h4>
+    <h2>Wants to Get Updates?</h2>
+    <form>
+      <input type="text" placeholder="Enter Your Email Address...">
+      <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </form>
+  </section>
+
 
   <!-- Footer -->
-  <div class="section-9 mb">
-    <footer>
+  <div id="footer-container">
+    <section class="footer">
       <div class="social-media">
         <div class="logo-container">
           <img src="./images/logo.png" alt="logo" class="logo">
@@ -494,23 +489,8 @@
           <li><a href="#">TX, Hustan</a></li>
         </ul>
       </div>
-    </footer>
+    </section>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

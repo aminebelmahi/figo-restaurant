@@ -36,14 +36,14 @@ a:hover {
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 3rem;
   letter-spacing: 2px;
   margin-bottom: 25px;
   line-height: 1.3;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 25px;
   line-height: 1.5;
 }
@@ -52,13 +52,13 @@ h4 {
   font-family: "Cookie", cursive;
   margin-bottom: 25px;
   color: var(--orange);
-  font-size: 26px;
+  font-size: 2rem;
 }
 
 p {
   line-height: 1.5;
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 img {
@@ -73,18 +73,9 @@ img {
   margin-bottom: 150px;
 }
 
-.hero-container,
-.welcome,
-.reasons,
-.menu,
-.history,
-.testimonials,
-.news,
-.subscription,
-footer {
-  width: 75%;
+section{
+  width: 80%;
   margin: 0 auto;
-  height: 100%;
 }
 
 /* Components */
@@ -93,15 +84,16 @@ footer {
   cursor: pointer;
   width: 165px;
   outline: none;
-  padding: 15px 20px;
+  padding: 1.1rem 1.5rem;
   border: 1px solid beige;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   background-image: linear-gradient(to left,
       var(--dark-green-leaf),
       var(--light-green-leaf));
   color: var(--egg-shell);
   text-align: center;
   box-shadow: 0 5px 10px -10px;
+  font-size: 0.8rem;
 }
 
 .btn:hover {
@@ -111,22 +103,27 @@ footer {
 input {
   width: 365px;
   outline: none;
-  padding: 15px 20px;
+  padding: 1rem 1.5rem;
   border: none;
   margin-right: 20px;
+  font-size: 1rem;
 }
 
 /***** Section 1: Hero *****/
 
-.section-1 {
+#section-container {
+  max-width: 100%;
   background-image: linear-gradient(to bottom, var(--egg-shell), #ffffff);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Navbar */
 
 nav {
   width: 100%;
-  height: 10vh;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,7 +140,13 @@ li a {
   font-size: 1.1rem;
 }
 
+.burger-menu{
+  display: none;
+}
+
 /* Showcase */
+
+
 
 .showcase {
   display: flex;
@@ -159,7 +162,6 @@ li a {
 }
 
 .showcase> :last-child {
-  margin-left: 50px;
   flex: 1;
   margin-right: -150px;
 }
@@ -238,6 +240,10 @@ li a {
 }
 
 /***** Section 4: Menu *****/
+
+.menu{
+  align-items: center;
+}
 
 /* Text */
 
@@ -336,11 +342,11 @@ li a {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .price {
-  font-size: 22px;
+  font-size: 1.3rem;
   color: var(--dark-green-leaf);
   font-weight: 600;
 }
@@ -366,6 +372,14 @@ h5 {
 
 /*** Testimonials ***/
 
+section.testimonials {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .testimonials .text {
   text-align: center;
 }
@@ -376,6 +390,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .testimony-container .t-card {
@@ -473,6 +488,10 @@ h5 {
 
 .subscription {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .subscription form {
@@ -503,38 +522,37 @@ h5 {
   border-radius: 50%;
 }
 
-/*** Footer ***/
+/*** footer ***/
 
-.section-9 {
+#footer-container {
   background-color: #8cb56013;
   padding: 70px 0;
   height: 400px;
   margin-bottom: 0;
 }
 
-footer {
-  height: 100%;
+.footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
 }
 
-footer .logo {
+.footer .logo {
   width: 70px;
 }
 
-footer>div {
+.footer>div {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   margin: 0 auto;
 }
 
-footer>div>ul>li {
+.footer>div>ul>li {
   margin-top: 20px;
 }
 
-footer .social-media-icons {
+.footer .social-media-icons {
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
@@ -552,3 +570,4 @@ footer .social-media-icons {
   border-radius: 10px;
   cursor: pointer;
 }
+
