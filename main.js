@@ -38,7 +38,7 @@ const prevBtn = document.querySelector('.prev-btn');
 
 const testimonials = [{
     name: 'Eric Lemon',
-    info: 'Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet, congue mauris rhoncus aenean vel.',
+    info: 'Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet, congue mauris rhoncus aenean vel. lorem ipsum dolor sit amet consectetur adipiscing.',
     avatar: 'https://i.ibb.co/d7S9dBL/avatar-1.jpg'
   },
   {
