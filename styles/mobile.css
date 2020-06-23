@@ -602,7 +602,7 @@ section.testimonials {
   left: 0;
   height: 100vh;
   width: 60%;
-  background-color: var(--orange);
+  background-color: var(--light-green-leaf);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,6 +618,7 @@ section.testimonials {
 
 .nav-links li a{
   font-size: 1.5rem;
+  color: var(--egg-shell);
 }
 
 /* Activate the Navbar */

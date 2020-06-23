@@ -99,10 +99,18 @@ navSlide = () => {
   const navLinks = document.querySelector('.nav-links');
 
   burger.addEventListener("click", () => {
+    console.log('test')
     navLinks.classList.toggle("nav-links-active");
   });
 
-}
+
+  document.addEventListener("click", (e) => {
+    if (!['bars', 'burger-menu'].some(el => e.target.classList.contains(el))) {
+      navLinks.classList.remove("nav-links-active");
+    }
+  });
+
+};
 
 navSlide();
 
