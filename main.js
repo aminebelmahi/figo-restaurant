@@ -94,7 +94,6 @@ prevBtn.addEventListener('click', (e) => {
 
 ///// Mobile Navigation Menu /////
 
-
 navSlide = () => {
   const burger = document.querySelector('.burger-menu');
   const navLinks = document.querySelector('.nav-links');
