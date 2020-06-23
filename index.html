@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Stylesheet Links -->
   <!-- Desktop -->
-  <link rel='stylesheet' media="screen and (min-device-width: 480px)" href='./styles/desktop.css' />
+  <link rel='stylesheet' media="screen and (min-device-width: 900px)" href='./styles/desktop.css' />
   <!-- Mobile -->
-  <link rel='stylesheet' media="screen and (max-device-width: 480px)" href='./styles/mobile.css' />
+  <link rel='stylesheet' media="screen and (max-device-width: 900px)" href='./styles/mobile.css' />
   <!-- External CSS libraries -->
   <link
     href="https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,500&display=swap"
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <!---- Hero ---->
+  <!---- Hero Start ---->
   <div id="section-container">
     <section class="hero-container mb">
       <!-- Navbar -->
@@ -29,17 +29,18 @@
         </div>
         <!-- UL -->
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#news">News</a></li>
           <li>
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
           </li>
-          <div class="burger-menu">
-            <i class="fa fa-bars"></i>
-          </div>
         </ul>
+        <!-- Burger Menu -->
+        <div class="burger-menu">
+          <i class="fa fa-bars"></i>
+        </div>
       </nav>
       <!-- Showcase -->
       <div class="showcase">
@@ -67,10 +68,11 @@
       </div>
     </section>
   </div>
+  <!-- Hero End -->
 
 
-  <!-- Welcome -->
-  <section class="welcome mb">
+  <!-- Welcome Start -->
+  <section class="welcome mb" id="welcome">
     <!-- Text -->
     <div class="text">
       <h4>Welcome</h4>
@@ -93,8 +95,9 @@
       <img src="./images/chef.jpg" alt="" />
     </div>
   </section>
+  <!-- Welcome End -->
 
-  <!-- Reason -->
+  <!-- Reason Start -->
   <section class="reasons mb">
     <!-- Text -->
     <div class="text">
@@ -137,9 +140,10 @@
       </div>
     </div>
   </section>
+  <!-- Reasons End -->
 
-  <!-- Menu -->
-  <section class="menu mb">
+  <!-- Menu Start -->
+  <section class="menu mb" id="menu">
     <!-- Text -->
     <div class="text">
       <h4>Browse</h4>
@@ -349,12 +353,12 @@
             <span class="price">69£</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+  <!-- Menu End -->
 
-  <!-- History -->
+  <!-- History Start -->
   <section class="history mb">
     <!-- Text -->
     <div class="text">
@@ -371,9 +375,10 @@
       <img src="./images/burger.jpg" alt="burger">
     </div>
   </section>
+  <!-- History End -->
 
-  <!-- Testimonials -->
-  <section class="testimonials mb">
+  <!-- Testimonials Start -->
+  <section class="testimonials mb" id="testimonials">
     <!-- Text -->
     <div class="text">
       <h4>Testimonials</h4>
@@ -395,10 +400,11 @@
       </div>
     </div>
   </section>
+  <!-- Testimonials End -->
 
 
-  <!-- News -->
-  <section class="news mb">
+  <!-- News Start -->
+  <section class="news mb" id="news">
     <!-- Text -->
     <div class="text">
       <h4>News</h4>
@@ -435,8 +441,9 @@
       </div>
     </div>
   </section>
+  <!-- News End -->
 
-  <!-- Subsciption   -->
+  <!-- Subsciption Start -->
   <section class="subscription mb">
     <h4>Subscription</h4>
     <h2>Wants to Get Updates?</h2>
@@ -445,9 +452,10 @@
       <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
     </form>
   </section>
+  <!-- Subscription End -->
 
 
-  <!-- Footer -->
+  <!-- Footer Start -->
   <div id="footer-container">
     <section class="footer">
       <div class="social-media">
@@ -491,6 +499,7 @@
       </div>
     </section>
   </div>
+  <!-- Footer End -->
 
 
 

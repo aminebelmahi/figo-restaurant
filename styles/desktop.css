@@ -18,6 +18,7 @@
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 /* font-family: 'Cookie', cursive;
@@ -119,7 +120,7 @@ input {
   background-repeat: no-repeat;
 }
 
-/* Navbar */
+/** Navbar **/
 
 nav {
   width: 100%;
@@ -144,9 +145,11 @@ li a {
   display: none;
 }
 
-/* Showcase */
+.close-menu{
+  display: none;
+}
 
-
+/** Showcase **/
 
 .showcase {
   display: flex;

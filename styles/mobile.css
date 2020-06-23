@@ -1,0 +1,639 @@
+/*** Global Styling ***/
+
+:root {
+    --very-dark-green: #2c3722;
+    --dark-green-leaf: #639d2b;
+    --light-green-leaf: #8cb560;
+    --orange: #febd00;
+    --egg-shell: #f8fbf5;
+    --light-grey: #8d8d8d;
+  }
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: var(--very-dark-green);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+h4 {
+    font-family: "Cookie", cursive;
+    margin-bottom: 25px;
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.illustration {
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 100px;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Components */
+
+.btn {
+    cursor: pointer;
+    width: 165px;
+    outline: none;
+    padding: 1.1rem 1.5rem;
+    border: 1px solid beige;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(to left,
+    var(--dark-green-leaf),
+    var(--light-green-leaf));
+    color: var(--egg-shell);
+    text-align: center;
+    box-shadow: 0 5px 10px -10px;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+input {
+    width: 265px;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 20px -2px #e9e9e9;
+}
+
+.footer input{
+    width: 165px;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    margin-right: 20px;
+    font-size: 1rem;
+    box-shadow: 0 4px 20px -2px #e9e9e9;
+}
+/***** Section 1: Hero *****/
+
+#section-container {
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--egg-shell), #ffffff);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    width: 85vw ;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 60px;
+}
+
+nav ul{
+    display: none;
+}
+
+li a {
+    color: var(--very-dark-green);
+    font-size: 1.1rem;
+}
+
+
+
+/* .nav-links li {
+    display: inline-block;
+    margin-left: 50px;
+    text-align: center;
+} */
+
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.showcase> :first-child, .showcase> :last-child  {
+    flex: 1;
+}
+
+.showcase input{
+    margin-bottom: 1rem;
+}
+
+/***** Section 2: Welcome *****/
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.welcome> :first-child, .welcome> :last-child  {
+  flex: 1;
+}
+
+/***** Section 3: Reasons *****/
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reasons .text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reasons .cards {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 35px;
+  justify-content: center;
+}
+
+.cards>* {
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 327px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--egg-shell);
+  padding: 0 22px;
+  border-radius: 5px;
+}
+
+.card:hover {
+  background-color: #ffffff;
+  border-bottom: 3px solid var(--dark-green-leaf);
+  box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
+}
+
+.card .icon,
+.card h3,
+.card p {
+  margin-bottom: 25px;
+}
+
+/***** Section 4: Menu *****/
+
+.menu{
+  align-items: center;
+  margin-bottom: 900px;
+}
+
+/* Text */
+
+.menu .text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/** Menu Content **/
+
+.menu-content {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Tabs */
+
+.tabs {
+  flex: 0.5;
+  width: 100%;
+  height: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  justify-content: space-between;
+}
+
+.tabs li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #f4f4f4;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tabs li:hover {
+  border-top: solid 3px #febe0065;
+}
+
+.active[data-tab-target] {
+  border-top: solid 3px var(--orange);
+}
+
+/* Tab Content */
+
+[data-tab-content] {
+  display: none;
+}
+
+/* Contenu when activated by clicking on the 'li' tab */
+.active[data-tab-content] {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+
+.tab-content {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  margin: auto 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
+}
+
+.menu-items .menu-img {
+  background-color: #f2ffdb25;
+}
+
+.menu-items img {
+  width: 100%;
+}
+
+.menu-items:hover {
+  background-color: #ffffff;
+  border-bottom: 3px solid var(--dark-green-leaf);
+  border-radius: 5px;
+}
+
+.menu-items>* {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+.price {
+  font-size: 1.3rem;
+  color: var(--dark-green-leaf);
+  font-weight: 600;
+}
+
+
+/*** History ***/
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.history> :first-child {
+  flex: 1;
+}
+
+.history> :last-child {
+  margin-top: 50px;
+  flex: 1;
+}
+
+/*** Testimonials ***/
+
+section.testimonials {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonials .text {
+  text-align: center;
+}
+
+.testimony-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.testimony-container .t-card {
+  margin-top: 50px;
+  width: 90%;
+  height: 100%;
+  box-shadow: 0px 0px 35px -15px rgba(204, 204, 204, 1);
+  position: relative;
+  background-color: var(--egg-shell);
+}
+
+.t-card .leaves {
+  position: absolute;
+  width: 120px;
+  top: -15%;
+}
+
+.t-card .avatar {
+  display: block;
+  width: 125px;
+  height: 155px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 3px solid var(--orange);
+  margin: 15px auto 20px auto;
+}
+
+.t-card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.t-card-body h5 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  color: var(--orange);
+  margin: 15px 10px;
+}
+
+.t-card-body .info {
+  padding: 0 20px 0px 20px;
+  margin-bottom: 15px;
+}
+
+.arrows {
+  width: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: var(--orange);
+  cursor: pointer;
+  border-bottom: 2px solid var(--orange);
+}
+
+.t-card button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/*** News ***/
+
+.news{
+  text-align: center;
+}
+
+.news-content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 35px;
+}
+
+.n-card .img-container,
+.n-card h5 {
+  margin-bottom: 25px;
+}
+
+.n-card a {
+  color: var(--orange);
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/*** Subscription ***/
+
+.subscription {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscription form {
+  width: 100%;
+  display: inline-flex;
+  position: relative;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: 0 4px 20px -2px #e9e9e9;
+}
+
+.subscription input {
+  flex: 1;
+  border-radius: 0;
+}
+
+.subscription button {
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to left,
+      var(--dark-green-leaf),
+      var(--light-green-leaf));
+  color: var(--egg-shell);
+  border-radius: 100%;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.subscription button .fa {
+  color: white;
+}
+
+
+
+/*** footer ***/
+
+#footer-container {
+  background-color: #8cb56013;
+  padding: 70px 0;
+  height: 100%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 20px;
+}
+
+.footer .logo {
+  display: block;
+  margin: 30px auto;
+  width: 70px;
+  text-align: center;
+}
+
+.footer>div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer>div>ul>li {
+  margin-top: 20px;
+}
+
+.footer .social-media-icons {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-media-icons button {
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to top,
+      var(--dark-green-leaf),
+      var(--light-green-leaf));
+  color: var(--egg-shell);
+  padding: 12px 15px;
+  margin-right: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Nav-Links */
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60%;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+  z-index: 1;
+}
+
+.nav-links li{
+  margin-bottom: 30px;
+}
+
+.nav-links li a{
+  font-size: 1.5rem;
+}
+
+/* Activate the Navbar */
+
+.nav-links-active{
+  transform: translateX(0);
+}
+
+.burger-menu{
+  font-size: 1.8rem;
+}
+
+.fa-shopping-bag{
+  display: none;
+}
+
+
+
+

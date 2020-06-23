@@ -37,27 +37,27 @@ const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.prev-btn');
 
 const testimonials = [{
-    name: 'Eric Lemon',
-    info: 'Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet, congue mauris rhoncus aenean vel. lorem ipsum dolor sit amet consectetur adipiscing.',
-    avatar: 'https://i.ibb.co/d7S9dBL/avatar-1.jpg'
-  },
-  {
-    name: 'Malika Emroud',
-    info: 'Varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere, congue mauris rhoncus aenean vel.',
-    avatar: 'https://i.ibb.co/nbp1D8W/avatar-2.jpg'
-  },
-  {
-    name: 'Linda Clair',
-    info: 'Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus.',
-    avatar: 'https://i.ibb.co/fHXtpQC/avatar-3.jpg'
-  },
-  {
-    name: 'Semantha Moon',
-    info: 'Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.',
-    avatar: 'https://i.ibb.co/Mp8t3XD/avatar-4.jpg'
-  }
+  name: 'Eric Lemon',
+  info: 'Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet, congue mauris rhoncus aenean vel. lorem ipsum dolor sit amet consectetur adipiscing.',
+  avatar: 'https://i.ibb.co/d7S9dBL/avatar-1.jpg'
+},
+{
+  name: 'Malika Emroud',
+  info: 'Varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere, congue mauris rhoncus aenean vel.',
+  avatar: 'https://i.ibb.co/nbp1D8W/avatar-2.jpg'
+},
+{
+  name: 'Linda Clair',
+  info: 'Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus.',
+  avatar: 'https://i.ibb.co/fHXtpQC/avatar-3.jpg'
+},
+{
+  name: 'Semantha Moon',
+  info: 'Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.',
+  avatar: 'https://i.ibb.co/Mp8t3XD/avatar-4.jpg'
+}
 ]
-// Starting Item 
+// Starting Item
 let currentItem = 0;
 
 // Load initial item (on refresh)
@@ -90,3 +90,21 @@ prevBtn.addEventListener('click', (e) => {
   }
   showPerson(currentItem);
 });
+
+
+///// Mobile Navigation Menu /////
+
+
+navSlide = () => {
+  const burger = document.querySelector('.burger-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-links-active");
+  });
+
+}
+
+navSlide();
+
+
