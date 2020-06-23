@@ -12,8 +12,12 @@ Web design from <a href="dribbble.com">Dribblbe</a> translated into code.
 
 ## Screenshots:
 
-<img src="https://i.ibb.co/qyh1ccw/Screenshot-14.png">
+### Desktop Size
+<img src="./images/screencapture-1.png">
 
+### Mobile Size
+<img src="./images/screencapture-3.png">
+<img src="./images/screencapture-2.png">
 
 ### <a href="https://codedish.github.io/figo-restaurant/.">Live Demo</a>
 
