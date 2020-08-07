@@ -19,7 +19,7 @@ Web design from <a href="dribbble.com">Dribblbe</a> translated into code.
 <img src="./images/screencapture-3.png">
 <img src="./images/screencapture-2.png">
 
-### <a href="https://codedish.github.io/figo-restaurant/.">Live Demo</a>
+### <a href="https://aminebelmahi.github.io/figo-restaurant/.">Live Demo</a>
 
 ## License
 
